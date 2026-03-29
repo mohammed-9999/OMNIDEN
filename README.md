@@ -1,6 +1,7 @@
-<p align="center">
-  <img src="logo.svg" alt="Omniden Logo" width="400">
-</p>
+<div align="center">
+  <img src="./logo.svg" alt="Omniden Logo" width="400" />
+</div>
+
 
 # Omniden 🛒
 
