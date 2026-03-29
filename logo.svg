@@ -1,0 +1,56 @@
+<svg xmlns="http://www.w3.org/2000/svg" viewBox="0 0 800 600" width="100%" height="100%">
+    <defs>
+        <style>
+            @import url('https://fonts.googleapis.com/css2?family=Montserrat:wght@400;500&display=swap');
+            .logo-text {
+                font-family: 'Montserrat', sans-serif;
+                font-size: 34px;
+                font-weight: 400;
+                letter-spacing: 0.4em;
+                fill: #0a1629;
+            }
+        </style>
+        <!-- Dégradé de la pupille (Iris) -->
+        <linearGradient id="irisGrad" x1="10%" y1="10%" x2="90%" y2="90%">
+            <stop offset="0%" stop-color="#007785" />
+            <stop offset="100%" stop-color="#00b5af" />
+        </linearGradient>
+
+        <!-- Dégradé du chariot (foncé à gauche, cyan sur la poignée) -->
+        <linearGradient id="cartGrad" x1="267.5" y1="0" x2="532.5" y2="0" gradientUnits="userSpaceOnUse">
+            <stop offset="0%" stop-color="#0a1629" />
+            <!-- Le changement de couleur s'opère uniquement sur la pointe droite du manche -->
+            <stop offset="85%" stop-color="#0a1629" />
+            <stop offset="100%" stop-color="#00b5af" />
+        </linearGradient>
+    </defs>
+
+    <!-- Partie supérieure de l'œil (Paupière) -->
+    <path d="M 287.5 255
+             Q 372.5 195, 457.5 235
+             Q 372.5 202, 287.5 255 Z" 
+          fill="#0a1629" />
+
+    <!-- Partie inférieure de l'œil fusionnée avec la structure du chariot -->
+    <path d="M 267.5 265
+             Q 322.5 294, 377.5 294
+             L 447.5 294
+             L 492.5 195
+             L 532.5 195
+             L 532.5 201
+             L 489.8 201
+             L 450.2 300
+             L 377.5 300
+             Q 327.5 300, 267.5 265 Z" 
+          fill="url(#cartGrad)" />
+
+    <!-- Cercle intérieur (Iris / Œil) -->
+    <circle cx="382.5" cy="248" r="18" fill="url(#irisGrad)" />
+
+    <!-- Roues du chariot -->
+    <circle cx="357.5" cy="313" r="7.5" fill="#0a1629" />
+    <circle cx="427.5" cy="313" r="7.5" fill="#0a1629" />
+
+    <!-- Texte du Logo -->
+    <text x="403" y="380" class="logo-text" text-anchor="middle">OMNIDEN</text>
+</svg>

@@ -1,3 +1,7 @@
+<p align="center">
+  <img src="logo.svg" alt="Omniden Logo" width="400">
+</p>
+
 # Omniden 🛒
 
 **Omni Market. One Eye**
