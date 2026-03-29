@@ -1,6 +1,8 @@
-# Omnidn 🛒
+# Omniden 🛒
 
-**Omnidn** is an intelligent product discovery tool designed to streamline your online shopping experience. Instead of hopping between dozens of tabs, users simply enter the product they are looking for, and Omnidn crawls multiple e-commerce platforms to bring the best results directly to them.
+**Omni Market. One Eye**
+
+**Omniden** is an intelligent product discovery tool designed to streamline your online shopping experience. Instead of hopping between dozens of tabs, users simply enter the product they are looking for, and Omniden crawls multiple e-commerce platforms to bring the best results directly to them.
 
 ## 🚀 Features
 * **Unified Search:** Search across multiple marketplaces from a single interface.
@@ -15,11 +17,11 @@
 ## ⚙️ Setup & Installation
 1.  **Clone the repository:**
     ```bash
-    git clone https://github.com/mohammed-9999/Omnidn.git
+    git clone https://github.com/mohammed-9999/Omniden.git
     ```
 2.  **Navigate to the project directory:**
     ```bash
-    cd Omnidn
+    cd Omniden
     ```
 3.  **Install dependencies:**
     *(Add instructions here once the framework is chosen)*
@@ -31,7 +33,7 @@
 - [ ] Price tracking and alerts.
 
 ## 🤝 Contributing
-Contributions, issues, and feature requests are welcome! Feel free to check the [issues page](https://github.com/mohammed-9999/Omnidn/issues).
+Contributions, issues, and feature requests are welcome! Feel free to check the [issues page](https://github.com/mohammed-9999/Omniden/issues).
 
 ---
 *Developed by [Mohammed](https://github.com/mohammed-9999)*
