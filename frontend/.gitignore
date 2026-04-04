@@ -1,0 +1,28 @@
+# ==========================================
+# NODE.JS / FRONTEND .GITIGNORE
+# ==========================================
+
+# 1. ENVIRONMENTS & SECRETS (FRONTEND)
+.env
+.env.*
+.env.local
+.env.development.local
+.env.test.local
+.env.production.local
+!.env.example
+
+# 2. MODULES
+node_modules/
+jspm_packages/
+.npm/
+
+# 3. NEXT.JS
+.next/
+out/
+build/
+
+# 4. LOGS
+npm-debug.log*
+yarn-debug.log*
+yarn-error.log*
+pnpm-debug.log*

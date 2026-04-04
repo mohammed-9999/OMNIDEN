@@ -1,0 +1,34 @@
+# ==========================================
+# GITHUB STANDARD PRO .GITIGNORE (GLOBAL)
+# ==========================================
+
+# 1. ENVIRONMENTS & SECRETS (ROOT)
+.env
+.env.*
+!.env.example
+*.pem
+*.key
+.secrets/
+credentials.json
+
+# 2. OS & SYSTEM FILES
+.DS_Store
+.DS_Store?
+._*
+.Spotlight-V100
+.Trashes
+ehthumbs.db
+Thumbs.db
+desktop.ini
+
+# 3. IDEs & EDITORS
+.idea/
+.vscode/
+*.swp
+*.swo
+*~
+.fleet/
+
+# 4. DOCKER
+.docker-workspace
+docker-compose.override.yml

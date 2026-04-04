@@ -1,0 +1,52 @@
+# ==========================================
+# PYTHON / BACKEND .GITIGNORE
+# ==========================================
+
+# 1. ENVIRONMENTS & SECRETS (BACKEND)
+.env
+.env.*
+!.env.example
+
+# 2. PYTHON CACHE
+__pycache__/
+*.py[cod]
+*$py.class
+*.so
+.Python
+
+# 3. BUILD & DISTRIBUTION
+build/
+develop-eggs/
+dist/
+downloads/
+eggs/
+.eggs/
+lib/
+lib64/
+parts/
+sdist/
+var/
+wheels/
+*.egg-info/
+.installed.cfg
+*.egg
+
+# 4. VIRTUAL ENVIRONMENTS
+venv/
+.venv/
+env/
+pip-log.txt
+pip-delete-this-directory.txt
+
+# 5. TESTING & CACHE
+.tox/
+.nox/
+.coverage
+.coverage.*
+.cache
+.pytest_cache/
+.mypy_cache/
+.ruff_cache/
+celerybeat-schedule
+celerybeat.pid
+*.log
