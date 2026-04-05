@@ -14,10 +14,10 @@ class ReviewSummary(BaseModel):
 class ShippingInfo(BaseModel):
     """Data for calculating 'Total Cost' and 'Urgency'"""
     cost: float = Field(0.0, ge=0)
-    currency: Currency = Currency.MAD
+    currency: Currency = Field(..., description="The currency extracted from the page")
     estimated_delivery_days: Optional[int] = None
     is_free_shipping: bool = False
-    ships_to_morocco: bool = True
+    ships_to_morocco: bool = True # todo : this should be a list of the countries that the product can ship into
 
 class Product(BaseModel):
     """
@@ -33,12 +33,12 @@ class Product(BaseModel):
     # 2. Commercial Data
     title: str = Field(..., min_length=2)
     price: float = Field(..., gt=0)
-    currency: Currency = Currency.MAD
-    condition: ProductCondition = ProductCondition.NEW
-    is_available: bool = True
+    currency: Currency = Field(..., description="The currency extracted from the page")
+    condition: ProductCondition = ProductCondition.NEW # todo : here the condition should be written by the model but it has to be written in a unified format as the currency , they will be defined in a file as rules after to give along the prompt
+    is_available: bool = True  
     
     # 3. Deep Metadata (For the Ranking Agent)
-    category: ProductCategory = ProductCategory.OTHER
+    category: ProductCategory = ProductCategory.OTHER  # todo : here the product category should be written by the model but it has to be written in a unified format as the currency , they will be defined in a file as rules after to give along the prompt  
     specifications: Dict[str, Any] = Field(
         default_factory=dict, 
         description="Technical specs like 'RAM', 'Storage', 'Color'"
@@ -57,6 +57,7 @@ class Product(BaseModel):
 
 class ProductListResponse(BaseModel):
     """Standardized wrapper for the 'Search' endpoint"""
+
     query_hash: str
-    provider: str = "Gemini-1.5-Flash"  
+    provider: str = "Gemini-1.5-Flash"  # todo : this one has to be defined in .env file 
     items: List[Product]
